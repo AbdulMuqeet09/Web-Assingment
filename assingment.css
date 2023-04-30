@@ -1,0 +1,735 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    }
+    
+    h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+    }
+    
+    h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    }
+    
+    p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    }
+    
+    /* Navigation Bar */
+    .navbar {
+    background-color: black;
+    color: #f3eded;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    }
+    
+    .navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    }
+    
+    .navbar-nav > li > a {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    }
+    
+    .navbar-nav > li > a:hover {
+    color: #f7b731;
+    }
+    
+    /* Welcome Page */
+    #welcome {
+    background-image:url("https://e0.pxfuel.com/wallpapers/149/259/desktop-wallpaper-web-design-web-developer.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 10rem 0;
+    }
+    
+    #welcome h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px #150101;
+    }
+    
+    #welcome p {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px #0b0101f6;
+    padding: 30px 50px;
+    }
+    
+    /* Favorite Personalities Page */
+    #personalities {
+    background-color: #f7f7f7;
+    padding: 5rem 0;
+    }
+    
+    .personality {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    }
+
+    .img{
+        max-width: 100%;
+        height: 300px; /* Change this value to the desired height */
+        object-fit: cover;
+        margin-bottom: 1rem;
+
+    }
+
+    .images{
+        max-width: 100%;
+        height: 400px; /* Change this value to the desired height */
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+    
+    .personality img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    }
+    
+    /* Favorite Cities Page */
+    #cities {
+    background-color: #fff;
+    padding: 5rem 0;
+    }
+    
+    .city {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    }
+    
+    .city img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    }
+    
+    /* Favorite Tourist Spots Page */
+    #spots {
+    background-color: #f7f7f7;
+    padding: 5rem 0;
+    }
+    
+    .spot {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    }
+    
+    .spot img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    }
+    
+    /* Contact Information Page */
+    #contact {
+    background-color: #fff;
+    padding: 5rem 0;
+    }
+    
+    .form-control {
+    border-radius: 0;
+    }
+    
+    .btn-primary {
+    background-color: #f7b731;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    }
+    
+    .btn-primary:hover {
+    background-color: #e8a427;
+    }
+    
+    .social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .social-icons li {
+    margin: 0 1rem;
+    }
+    
+    .social-icons a {
+    color: #f0e9e9;
+    font-size: 2rem;
+    }
+    
+    .social-icons a:hover {
+    color: #f7b731;
+    }
+    
+    /* Footer */
+    footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem
+    }
+    /* Footer Links */
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    }
+    
+    .footer-links li {
+    margin: 0 1rem;
+    }
+    
+    .footer-links a {
+    color: #130101;
+    font-size: 1.2rem;
+    }
+    
+    .footer-links a:hover {
+    color: #f7b731;
+    }
+    
+    /* Media Queries */
+    @media (max-width: 768px) {
+    .navbar-brand {
+    font-size: 1.5rem;
+    }
+    .navbar-nav > li > a {
+        font-size: 1rem;
+        margin-left: 0.5rem;
+    }
+    
+    .social-icons a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+.navbar-brand {
+font-size: 1.2rem;
+}
+.navbar-nav {
+	flex-direction: column;
+}
+
+.navbar-nav > li {
+	margin: 0.5rem 0;
+}
+
+.social-icons a {
+	font-size: 1.2rem;
+}
+}
+
+@media (max-width: 480px) {
+#welcome h1 {
+font-size: 3rem;
+}
+#welcome p {
+	font-size: 1.2rem;
+}
+
+.personality {
+	margin: 1rem 0;
+}
+
+.city {
+	margin: 1rem 0;
+}
+
+.spot {
+	margin: 1rem 0;
+}
+}
+
+@media (max-width: 360px) {
+#welcome h1 {
+font-size: 2rem;
+}
+#welcome p {
+	font-size: 1rem;
+}
+
+.personality {
+	padding: 0.5rem;
+}
+
+.personality img {
+	margin-bottom: 0.5rem;
+}
+
+.city {
+	padding: 0.5rem;
+}
+
+.city img {
+	margin-bottom: 0.5rem;
+}
+
+.spot {
+	padding: 0.5rem;
+}
+
+.spot img {
+	margin-bottom: 0.5rem;
+}
+}
+
+/* Miscellaneous */
+.container {
+max-width: 1140px;
+margin: 0 auto;
+padding: 0 1rem;
+}
+
+.text-center {
+text-align: center;
+}
+
+.float-left {
+float: left;
+}
+
+.float-right {
+float: right;
+}
+
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+}
+/* Contact Form Styling */
+.contact-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    }
+    
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-form textarea {
+    height: 150px;
+    resize: none;
+    }
+    
+    .contact-form button[type="submit"] {
+    display: block;
+    background-color: #f7b731;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    }
+    
+    .contact-form button[type="submit"]:hover {
+    background-color: #eeab1e;
+    }
+    
+    @media (max-width: 576px) {
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+    margin-bottom: 0.5rem;
+    }
+    }
+    
+    @media (max-width: 480px) {
+    .contact-form label {
+    font-size: 1rem;
+    }
+    .contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+	font-size: 1rem;
+}
+}
+
+@media (max-width: 360px) {
+.contact-form label {
+font-size: 0.8rem;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+	font-size: 0.8rem;
+}
+}
+/* Footer Styling */
+.footer {
+    background-color: #222;
+    padding: 2rem;
+    color: #fff;
+    }
+    
+    .footer p {
+    margin-bottom: 1rem;
+    }
+    
+    .footer a {
+    color: #f7b731;
+    text-decoration: none;
+    }
+    
+    .footer a:hover {
+    color: #eeab1e;
+    }
+    
+    .social-icons {
+    display: flex;
+    align-items: center;
+    }
+    
+    .social-icons a {
+    margin-right: 1rem;
+    }
+    
+    .social-icons i {
+    font-size: 2rem;
+    }
+    
+    @media (max-width: 576px) {
+    .social-icons a {
+    margin-right: 0.5rem;
+    }
+    .social-icons i {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+.footer p {
+font-size: 0.9rem;
+}
+.social-icons i {
+	font-size: 1.2rem;
+}
+}
+
+@media (max-width: 360px) {
+.footer p {
+font-size: 0.8rem;
+}
+.social-icons i {
+	font-size: 1rem;
+}
+}
+/* General Styling */
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    }
+
+    body {
+    background-color: #f2f2f2;
+    line-height: 1.5;
+    }
+    
+    .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    }
+    
+    h1,
+    h2,
+    h3 {
+    margin-bottom: 1rem;
+    }
+    
+    h1 {
+    font-size: 3rem;
+    text-align: center;
+    }
+    
+    h2 {
+    font-size: 2rem;
+    }
+    
+    h3 {
+    font-size: 1.5rem;
+    }
+    
+    img {
+    max-width: 100%;
+    }
+    
+    @media (max-width: 576px) {
+    .container {
+    padding: 1rem;
+    }
+    }
+    
+    @media (max-width: 480px) {
+    h1 {
+    font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 360px) {
+h1 {
+font-size: 2rem;
+}
+h2 {
+	font-size: 1.2rem;
+}
+
+h3 {
+	font-size: 1rem;
+}
+}
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #222;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    }
+    
+    .navbar-brand {
+    color: #f7b731;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    }
+    
+    .navbar-nav {
+    display: flex;
+    align-items: center;
+    }
+    
+    .nav-link {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.2s ease-in-out;
+    }
+    
+    .nav-link:hover {
+    color: #f7b731;
+    }
+    
+    .active {
+    color: #f7b731;
+    }
+    
+    @media (max-width: 768px) {
+    .nav-link {
+    font-size: 1rem;
+    margin-right: 1rem;
+    }
+    }
+    
+    @media (max-width: 576px) {
+    .navbar-brand {
+    font-size: 1.5rem;
+    }
+    .nav-link {
+        font-size: 0.9rem;
+        margin-right: 0.5rem;
+    }
+    
+    .navbar-toggler-icon {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+.navbar-brand {
+font-size: 1.2rem;
+}
+.nav-link {
+	font-size: 0.8rem;
+	margin-right: 0.3rem;
+}
+
+.navbar-toggler-icon {
+	font-size: 1rem;
+}
+}
+
+@media (max-width: 360px) {
+.navbar-brand {
+font-size: 1rem;
+}
+.nav-link {
+	font-size: 0.7rem;
+	margin-right: 0.2rem;
+}
+
+.navbar-toggler-icon {
+	font-size: 0.8rem;
+}
+}
+/* Footer Styling */
+footer {
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    }
+    
+    .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .social-icon {
+    color: #0b0909;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    transition: color 0.2s ease-in-out;
+    }
+    
+    .social-icon:hover {
+    color: #f7b731;
+    }
+    
+    @media (max-width: 576px) {
+    .social-icon {
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    }
+    }
+    
+    @media (max-width: 480px) {
+    .social-icon {
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    }
+    }
+    
+    @media (max-width: 360px) {
+    .social-icon {
+    font-size: 0.8rem;
+    margin: 0 0.2rem;
+    }
+    }
+    /* Footer styles */
+footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Social icon styles */
+  .social-icons {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    transition: all 0.3s ease;
+    position: relative; /* add this to make logo image relative to the icon */
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+  
+  .social-icons a i {
+    font-size: 16px;
+  }
+  
+  /* Logo image styles */
+  .social-icons a img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: auto;
+  }
+  
+  /* Copyright text styles */
+  footer p {
+    margin: 10px 0 0;
+  }
+  
